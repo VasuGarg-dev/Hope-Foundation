@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hope Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+<header class="navbar">
+  <a href="#home" class="logo">HOPE</a>
+  <input type="checkbox" id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+  <nav><ul class="nav-links">
+    <li><a href="#home">Home</a></li><li><a href="#story">About</a></li><li><a href="#event">Event</a></li>
+    <li><a href="#causes">Causes</a></li><li><a href="#volunteer">Volunteer</a></li><li><a href="#feedback">Feedback</a></li>
+  </ul></nav>
+  <div class="nav-right">
+    <a href="#event" class="btn btn-yellow small">Donate</a>
+    <label for="menuToggle" class="hamburger" aria-hidden="true">&#9776;</label>
+  </div>
+</header>
+<!-- Home  -->
+<section class="hero" id="home">
+  <div>
+    <h1>Hope for Humanity</h1>
+    <p>Give a helping hand to those who need it.</p>
+    <a href="#event" class="btn btn-black">Donate Now</a>
+    <a href="#volunteer" class="btn btn-yellow">Volunteer</a>
+  </div>
+</section>
+
+<!-- Story -->
+<section class="story" id="story">
+  <div>
+    <h2>Story About <span>What We Do</span></h2>
+    <p>We are a non-profit working to bring education, food, and healthcare to children and families in need. Every rupee you give goes straight to classrooms, kitchens, and health camps.</p>
+    <a href="#event" class="btn btn-black">Know More</a>
+  </div>
+  <div class="story-grid">
+    <div class="feature"><div class="icon">📚</div><h4>Learning Legacy</h4><p>Free education for every child.</p></div>
+    <div class="feature"><div class="icon">💰</div><h4>Raise Donation</h4><p>Every rupee reaches those in need.</p></div>
+    <div class="feature"><div class="icon">🌟</div><h4>Be an Inspiration</h4><p>Inspire others to give back.</p></div>
+    <div class="feature"><div class="icon">🤝</div><h4>Become a Volunteer</h4><p>Give your time to the cause.</p></div>
+  </div>
+</section>
+<!-- Event image -->
+
+
+<section class="event" id="event">
+  <img class="event-img" src="/images/images.jpg" alt="Child writing on a blackboard">
+  <div>
+    <h2>An Important <span>Event For Charity</span></h2>
+    <p>Join our fundraising drive. Choose an amount and help a child go to school.</p>
+    <div class="amounts">
+      <label class="amount"><input type="radio" name="amt" value="500"><span>₹500</span></label>
+      <label class="amount"><input type="radio" name="amt" value="1000"><span>₹1000</span></label>
+      <label class="amount"><input type="radio" name="amt" value="2000"><span>₹2000</span></label>
+      <label class="amount"><input type="radio" name="amt" value="5000"><span>₹5000</span></label>
+    </div>
+    <a href="mailto:donate@hopefoundation.org" class="btn btn-black">Donate Now</a>
+  </div>
+</section>
+
+<!-- featured Causes -->
+
+<section class="causes" id="causes">
+  <h2 class="center">Featured <span>Causes</span></h2>
+  <div class="cards">
+    <article class="card"><div class="card-img" style="background:linear-gradient(135deg,#6aa84f,#274e13)">📖</div>
+      <div class="card-body"><h3>Education for All</h3><p>Books, uniforms, and classrooms for kids.</p><a href="#">Read more</a></div></article>
+    <article class="card"><div class="card-img" style="background:linear-gradient(135deg,#e69138,#783f04)">🍲</div>
+      <div class="card-body"><h3>Feed a Child</h3><p>Daily hot meals for families in need.</p><a href="#">Read more</a></div></article>
+    <article class="card"><div class="card-img" style="background:linear-gradient(135deg,#3d85c6,#0b3d63)">🩺</div>
+      <div class="card-body"><h3>Health Camps</h3><p>Free check-ups in nearby villages.</p><a href="#">Read more</a></div></article>
+  </div>
+</section>
+ 
+<!-- Data -->
+<section class="stats">
+  <div class="stat"><h3>₹1500K</h3><p>Funds Raised</p></div>
+  <div class="stat"><h3>400+</h3><p>Volunteers</p></div>
+  <div class="stat"><h3>7500+</h3><p>People Helped</p></div>
+  <div class="stat"><h3>37K</h3><p>Meals Served</p></div>
+</section>
+
+
+<!-- Volunteer -->
+
+
+<section class="volunteer" id="volunteer">
+  <h2>Become a Volunteer</h2>
+  <p>Join us for a better life and a beautiful future.</p>
+  <a href="mailto:volunteer@hopefoundation.org" class="btn btn-black">Join Now</a>
+</section>
+
+<!-- Feedback Form -->
+ 
+<section class="feedback" id="feedback">
+  <h2>Share Your <span>Feedback</span></h2>
+  <form id="feedbackForm" novalidate>
+    <input type="text" id="fbName" placeholder="Your name" aria-label="Your name">
+    <input type="email" id="fbEmail" placeholder="Your email" aria-label="Your email">
+    <select id="fbRating" aria-label="Rating">
+      <option value="">Rate your experience</option>
+      <option value="5">5 - Excellent</option><option value="4">4 - Good</option><option value="3">3 - Average</option>
+      <option value="2">2 - Poor</option><option value="1">1 - Very poor</option>
+    </select>
+    <textarea id="fbMessage" rows="4" placeholder="Your feedback" aria-label="Your feedback"></textarea>
+    <p id="fbError" class="error" aria-live="polite"></p>
+    <button type="submit" class="btn btn-yellow">Submit Feedback</button>
+  </form>
+  <div class="result" id="fbResult" hidden>
+    <h3>Thank you for your feedback!</h3>
+    <p>Here is the response you submitted:</p>
+    <dl>
+      <dt>Name</dt><dd id="rName"></dd>
+      <dt>Email</dt><dd id="rEmail"></dd>
+      <dt>Rating</dt><dd id="rRating"></dd>
+      <dt>Feedback</dt><dd id="rMessage"></dd>
+    </dl>
+    <button type="button" class="btn btn-black" id="fbAgain">Submit another response</button>
+  </div>
+</section>
+
+<footer><p>&copy; 2026 Hope Foundation. All rights reserved.</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
